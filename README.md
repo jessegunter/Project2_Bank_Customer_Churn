@@ -9,7 +9,7 @@
 - [File Structure](#file-structure)
 - [Problems Encountered](#problems-encountered)
 - [References](#references)
-- [Team Members][team-members)
+- [Team Members](#team-members)
 - [License](#license)
 
 ## PROJECT DESCRIPTION   
@@ -33,6 +33,16 @@
 3. Data Cleanup:   
     - OneHotEncoder was applied to columns 'Geography' & 'Gender'   
     - OrdinalEncoder was applied to the column 'Card Type'   
+
+## File Structure
+
+The project follows the following structure:
+
+Code language: Python (python)   
+Project2_Bank_Customer_Churn/   
+├─bank_customer_churn.ipynb   
+├─README.md   
+└─Resources/Customer-Churn-Records.csv   
 
 ## PROBLEMS ENCOUNTERED:   
 
