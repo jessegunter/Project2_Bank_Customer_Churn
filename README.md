@@ -14,7 +14,7 @@
 - [Additional Reading](#additional-reading)
 
 ## PROJECT DESCRIPTION   
- Bank Europe understands that it is more expensive to bring on new customers and is concerned with customer churn, the number of customers who are closing accounts. The Artificial Intelligence and Data Team has been tasked to better understand what leads a customer to close an account with the bank and develop predictive models that could be used to develop loyalty programs and retention campaigns targeted to reduce churn.   
+ Bank Europe understands that it is expensive to bring on new customers.  Therefore, the bank is concerned with customer churn, that is, the number of customers who are closing accounts. The Artificial Intelligence and Data Team(AIDT) has been tasked to better understand what leads a customer to close an account with the bank. AIDT will develop predictive models that could be used to develop loyalty programs and retention campaigns targeted to reduce churn.   
 
 ## INSTALLATION   
 
