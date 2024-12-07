@@ -8,10 +8,9 @@
 - [Data Processing](#data-processing)
 - [File Structure](#file-structure)
 - [Problems Encountered](#problems-encountered)
+- [References](#references)
+- [Team Members][team-members)
 - [License](#license)
-- [Credits](#credits)
-- [Contact Information](#contact-information)
-- [Additional Reading](#additional-reading)
 
 ## PROJECT DESCRIPTION   
  Bank Europe understands that it is expensive to bring on new customers.  Therefore, the bank is concerned with customer churn, that is, the number of customers who are closing accounts. The Artificial Intelligence and Data Team(AIDT) has been tasked to better understand what leads a customer to close an account with the bank. AIDT will develop predictive models that could be used to develop loyalty programs and retention campaigns targeted to reduce churn.   
@@ -35,7 +34,7 @@
     - OneHotEncoder was applied to columns 'Geography' & 'Gender'   
     - OrdinalEncoder was applied to the column 'Card Type'   
 
-### PROBLEMS ENCOUNTERED:   
+## PROBLEMS ENCOUNTERED:   
 
 
 ## REFERENCES   
