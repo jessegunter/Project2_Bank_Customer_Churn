@@ -31,26 +31,15 @@
 2. Data Exploration: One .csv file was read in and explored through the columns and info() methods.  The info() method revealed that there were no null values.  Additionally, unique values were reviewed for 'Geography' & 'Card type' columns.    
 
 3. Data Cleanup:   
-<<<<<<< HEAD
     - A pipeline is referenced that applies OneHotEncoder & OrdinalEncoder:   
 	- OneHotEncoder was applied to columns 'Geography' & 'Gender'   
 	- OrdinalEncoder was applied to the column 'Card Type'   
-    - These models were created inside different Jupyter notebooks, each referencing the pipeline file:
-	Logistic Regression
-	Support Vector Machines (SVM)
-	K-Nearest Neighbors (KNN)
-	Decision Trees
-	Random Forest
-	XGBoost
+    - These models were created inside different Jupyter notebooks, each referencing the pipeline file: Logistic Regression, Support Vector Machines(SVM),  K-Nearest Neighbors(KNN), Decision Trees, Random Forest & XGBoost
     - Here are the Accuracy & Balanced Accuracy Scores of those models:
 
 <p align="center">
   <img src="/Resources/results-grid.jpeg" />
 </p>
-=======
-    - OneHotEncoder was applied to columns 'Geography' & 'Gender'   
-    - OrdinalEncoder was applied to the column 'Card Type'   
->>>>>>> main
 
 ## File Structure
 
