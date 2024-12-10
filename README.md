@@ -31,6 +31,7 @@
 2. Data Exploration: One .csv file was read in and explored through the columns and info() methods.  The info() method revealed that there were no null values.  Additionally, unique values were reviewed for 'Geography' & 'Card type' columns.    
 
 3. Data Cleanup:   
+<<<<<<< HEAD
     - A pipeline is referenced that applies OneHotEncoder & OrdinalEncoder:   
 	- OneHotEncoder was applied to columns 'Geography' & 'Gender'   
 	- OrdinalEncoder was applied to the column 'Card Type'   
@@ -46,6 +47,10 @@
 <p align="center">
   <img src="/Resources/results-grid.jpeg" />
 </p>
+=======
+    - OneHotEncoder was applied to columns 'Geography' & 'Gender'   
+    - OrdinalEncoder was applied to the column 'Card Type'   
+>>>>>>> main
 
 ## File Structure
 
@@ -54,8 +59,15 @@ The project follows the following structure:
 Code language: Python (python)   
 Project2_Bank_Customer_Churn/   
 ├─bank_customer_churn.ipynb   
+├─utilities.ipynb   
+├─SVM.ipynb   
+├─knn.ipynb   
+├─logistic_regression.ipynb   
+├─xgboost.ipynb   
 ├─README.md   
-└─Resources/Customer-Churn-Records.csv   
+└─Resources/   
+  -Customer-Churn-Records.csv   
+  -results-grid.jpeg   
 
 ## PROBLEMS ENCOUNTERED:   
 
