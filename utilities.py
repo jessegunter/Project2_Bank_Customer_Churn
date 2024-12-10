@@ -27,7 +27,6 @@ def getColumnTransform():
 def getPipeline(classifier):
     column_transform = getColumnTransform()
     steps = [('Transform', column_transform),
-             ("Scale", StandardScaler(with_mean=False)),
              ("Classifier", classifier)]
     pipeline = Pipeline(steps)
     return pipeline
