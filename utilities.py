@@ -3,9 +3,8 @@ from sklearn.compose import ColumnTransformer
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, OrdinalEncoder
 from sklearn.pipeline import Pipeline
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, balanced_accuracy_score, classification_report
-
+from sklearn.metrics import roc_auc_score
 
 def test():
     print('test')
@@ -41,6 +40,12 @@ def scoreModel(y_test, y_pred):
     print("Classification Report:\n", classification)
     return {'accuracy_score': accuracy, 'balanced_accuracy_score': balanced_accuracy, 'classification_report': classification}
 
+def aucScore(pipeline, X_test, y_test):
+    y_proba = pipeline.predict_proba(X_test)[:, 1]
+    auc = roc_auc_score(y_test, y_proba)
+    print("auc Score: ", auc)
+
+
 def processData(bank_customer_df, classifier):
     #define X and y
     X = bank_customer_df.drop(columns=[ 'RowNumber', 'CustomerId', 'Surname', 'Exited', 'Complain'])
@@ -55,4 +60,5 @@ def processData(bank_customer_df, classifier):
     predictions = pipeline.predict(X_test)
     #evaluate the model
     results = scoreModel(y_test, predictions)
+    aucScore(pipeline, X_test, y_test)
     return results
