@@ -69,7 +69,11 @@ Project2_Bank_Customer_Churn/
 ├─README.md   
 └─Resources/   
   -Customer-Churn-Records.csv   
-  -results-grid.jpeg   
+  -feature_importance_1.png
+  -K_value.png
+  -Results1.png
+  -Results2.png
+  -bar-graph.png
 
 ## PROBLEMS ENCOUNTERED:   
 
