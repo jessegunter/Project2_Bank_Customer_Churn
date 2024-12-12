@@ -69,14 +69,14 @@ Project2_Bank_Customer_Churn/
 ├─README.md   
 └─Resources/   
   -Customer-Churn-Records.csv   
-  -feature_importance_1.png
-  -K_value.png
-  -Results1.png
-  -Results2.png
-  -bar-graph.png
+  -feature_importance_1.png   
+  -K_value.png   
+  -Results1.png   
+  -Results2.png   
+  -bar-graph.png   
 
 ## PROBLEMS ENCOUNTERED:   
-
+Leveraging a pipeline (utilities file), is extremely efficient.  However, anytime you want to try a new optimization technique, that utilities file must be updated, or else, you introduce variables known only to one local model.    
 
 ## REFERENCES   
 1. https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn/data    
