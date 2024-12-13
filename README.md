@@ -34,6 +34,9 @@
     - A pipeline is referenced that applies OneHotEncoder & OrdinalEncoder:   
 	- OneHotEncoder was applied to columns 'Geography' & 'Gender'   
 	- OrdinalEncoder was applied to the column 'Card Type'   
+
+## DATA MODELING
+1. Initial Modeling:  
     - These models were created inside different Jupyter notebooks, each referencing the pipeline file: Logistic Regression, Support Vector Machines(SVM),  K-Nearest Neighbors(KNN), Decision Trees, Random Forest & XGBoost   
     - Here are the initial Accuracy, Balanced Accuracy, Precision, Recall, F1 & AUC scores of those models:   
 
@@ -41,13 +44,15 @@
   <img src="/Resources/Results1.png" />
 </p>
 
-4. Data Optimization:   
+2. Model Optimization:   
     - OneHotEncoder & Ordinal Encoder were leveraged to optimize data evaluation   
     - KNN – A for loop was utilized to find the optimal value of the k parameter (graph on right)   
     - Random Forest – Feature importance analysis was evaluated with Geography_Spain as least importance (graph on right)   
     - SVM – GridSearchCV was used to identify the best C (controls regularization), gamma (defines how far a single training example’s influence reaches, and kernal parameters.    
     - Decision Trees – GridSearchCV was used to identify the best max depth, min samples split, min samples leaf, and criterion    
-    - XGBoost -  GridSearchCV was used to identify the best n_estimators, max depth, learning_rate & subsample 
+    - XGBoost -  GridSearchCV was used to identify the best n_estimators, max depth, learning_rate & subsample
+    - The first optimization results indicate that the organization should use the Random 
+Forest Model to build out their loyalty and retention programs
     - Here are the optimized scores of all models:   
 
 <p align="center">
