@@ -34,11 +34,24 @@
     - A pipeline is referenced that applies OneHotEncoder & OrdinalEncoder:   
 	- OneHotEncoder was applied to columns 'Geography' & 'Gender'   
 	- OrdinalEncoder was applied to the column 'Card Type'   
-    - These models were created inside different Jupyter notebooks, each referencing the pipeline file: Logistic Regression, Support Vector Machines(SVM),  K-Nearest Neighbors(KNN), Decision Trees, Random Forest & XGBoost
-    - Here are the Accuracy & Balanced Accuracy Scores of those models:
+    - These models were created inside different Jupyter notebooks, each referencing the pipeline file: Logistic Regression, Support Vector Machines(SVM),  K-Nearest Neighbors(KNN), Decision Trees, Random Forest & XGBoost   
+    - Here are the initial Accuracy, Balanced Accuracy, Precision, Recall, F1 & AUC scores of those models:   
 
 <p align="center">
-  <img src="/Resources/results-grid.jpeg" />
+  <img src="/Resources/Results1.png" />
+</p>
+
+4. Data Optimization:   
+    - OneHotEncoder & Ordinal Encoder were leveraged to optimize data evaluation   
+    - KNN – A for loop was utilized to find the optimal value of the k parameter (graph on right)   
+    - Random Forest – Feature importance analysis was evaluated with Geography_Spain as least importance (graph on right)   
+    - SVM – GridSearchCV was used to identify the best C (controls regularization), gamma (defines how far a single training example’s influence reaches, and kernal parameters.    
+    - Decision Trees – GridSearchCV was used to identify the best max depth, min samples split, min samples leaf, and criterion    
+    - XGBoost -  GridSearchCV was used to identify the best n_estimators, max depth, learning_rate & subsample 
+    - Here are the optimized scores of all models:   
+
+<p align="center">
+  <img src="/Resources/Results2.png" />
 </p>
 
 ## File Structure
@@ -56,10 +69,14 @@ Project2_Bank_Customer_Churn/
 ├─README.md   
 └─Resources/   
   -Customer-Churn-Records.csv   
-  -results-grid.jpeg   
+  -feature_importance_1.png   
+  -K_value.png   
+  -Results1.png   
+  -Results2.png   
+  -bar-graph.png   
 
 ## PROBLEMS ENCOUNTERED:   
-
+Leveraging a pipeline (utilities file), is extremely efficient.  However, anytime you want to try a new optimization technique, that utilities file must be updated, or else, you introduce variables known only to one local model.    
 
 ## REFERENCES   
 1. https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn/data    
