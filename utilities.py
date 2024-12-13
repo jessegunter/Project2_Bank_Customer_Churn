@@ -6,9 +6,6 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import accuracy_score, balanced_accuracy_score, classification_report
 from sklearn.metrics import roc_auc_score
 
-def test():
-    print('test')
-
 def getColumnTransform():
     # define column categories
     categorical_columns = ['Geography', 'Gender']
@@ -24,6 +21,7 @@ def getColumnTransform():
     return column_transform
 
 def getPipeline(classifier):
+    #define the pipeline and return it
     column_transform = getColumnTransform()
     steps = [('Transform', column_transform),
              ("Classifier", classifier)]
@@ -41,6 +39,7 @@ def scoreModel(y_test, y_pred):
     return {'accuracy_score': accuracy, 'balanced_accuracy_score': balanced_accuracy, 'classification_report': classification}
 
 def aucScore(pipeline, X_test, y_test):
+    #find the auc score of the model and print it
     y_proba = pipeline.predict_proba(X_test)[:, 1]
     auc = roc_auc_score(y_test, y_proba)
     print("auc Score: ", auc)
