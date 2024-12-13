@@ -6,6 +6,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Data Processing](#data-processing)
+- [Data Modeling](#data-modeling)
 - [File Structure](#file-structure)
 - [Problems Encountered](#problems-encountered)
 - [References](#references)
