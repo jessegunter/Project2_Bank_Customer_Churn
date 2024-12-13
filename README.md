@@ -81,7 +81,8 @@ Project2_Bank_Customer_Churn/
   -bar-graph.png   
 
 ## PROBLEMS ENCOUNTERED:   
-Leveraging a pipeline (utilities file), is extremely efficient.  However, anytime you want to try a new optimization technique, that utilities file must be updated, or else, you introduce variables known only to one local model.    
+Jupyter notebooks do not merge cleanly in github.com.  This is a known issue.  
+Time limitations prevented us from getting SMOTE to work, as well as oversampling.
 
 ## REFERENCES   
 1. https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn/data    
